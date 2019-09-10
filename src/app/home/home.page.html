@@ -1,17 +1,13 @@
 <ion-header>
-    <ion-toolbar class="ion-toolbar">
-        <ion-title>5 sitios turisticos cerca bogota</ion-title>
+    <ion-toolbar color="warning">
+        <ion-title class="tittle">5 sitios turisticos de Bogotá</ion-title>
         <br>
-        <ion-card-subtitle>Presentado por:</ion-card-subtitle>
-        <ion-card-subtitle>Pamela Cortes</ion-card-subtitle>
-        <ion-card-subtitle>Divier Castaneda</ion-card-subtitle>
     </ion-toolbar>
-    <br>
-    <ion-toolbar color="primary">
-        <ion-buttons slot="start"> Has clic aca para continuar:
+    <ion-toolbar color="danger">
+        <ion-buttons class="letra" slot="start"> 
 
-            <ion-button slot="start" href="/age">Heroes</ion-button>
-            <ion-button slot="end" href="/actividades">Actividades</ion-button>
+            <ion-button slot="start" href="/age">►Heroes</ion-button>
+            <ion-button slot="end" href="/actividades">►Actividades</ion-button>
         </ion-buttons>
     </ion-toolbar>
 
@@ -20,11 +16,12 @@
 <ion-content class="ion-padding">
     <ion-card *ngFor='let obj of sitiosturisticos'>
         <ion-img class="img-Menu" src=" {{obj.url}} "></ion-img>
+        <br>
         <ion-card-title>{{obj.nombre}}</ion-card-title>
         <ion-textarea>{{obj.descripcion}}</ion-textarea>
     </ion-card>
 
 </ion-content>
 <ion-footer class="ion-footer" slot="end">
-
+    <ion-card-subtitle> Powered By: Sara Camacho Albarracin © </ion-card-subtitle>
 </ion-footer>
